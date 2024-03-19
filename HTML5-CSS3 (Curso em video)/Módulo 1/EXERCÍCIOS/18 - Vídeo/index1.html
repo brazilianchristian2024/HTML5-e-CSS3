@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Inserindo Vídeos</title>
+</head>
+<body>
+     <h1>Inserindo vídeos hospedados localmente</h1>
+     <p>Este vídeo está hospedado no meu próprio servidor</p>
+     <video width="500" controls>
+           <source src="English Idioms 2.webm" type="video/webm">
+           <source src="English Idioms 2.mp4" type="video/mp4">
+           <source src="English Idioms 2.ogg" type="video/ogg"><!--Essa estrutura é necessária para corrigir possiveis erros dos formatos. Se o primeiro formato não abrir, tenta-se abrir o segundo e assim por diante. Fiz o teste de cada formato separadamente e o resultado foi o seguinte: os dois primeiros (webm e mp4) abriram e rodaram normalmente, aúdio e vídeo. Já o terceiro(ogg) abriu e rodou somente o áudio. Também é possível inserir uma "capa" de vídeo criando uma imagem no "Gimp" e depois inserindo-a na primeira linha da tag "video", entre os parâmetros "width" e "controls"-->
+           <p>Seu navegador não tem compatibilidade com reprodução de Vídeos</p>
+     </video> 
+     <h1>Inserindo vídeos do Youtube(Incorporação)</h1>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/ChqnN3cKzXQ?si=RKD09EUdGbUJrvVe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><!--Aqui temos uma incorporação de vídeo feita com sucesso na plataforma Youtube. A incorporação de vídeos pode ser feita também em outras plataformas, como por exemplo, a vimeo, que foi o segundo exemplo do Professor Gustavo Guanabara nessa aula. As plataformas tem suas semelhanças e diferenças, vantages e desvantagens. Por exemplo, uma vantagem da plataforma "vimeo" em relação a plataforma "Youtube" é a qualidade da imagem e alternativa de configurações. Porém, essa vantagem gera peso no arquivo e ele tem mais chance de travar quando você incorporá-lo. Assim, o Youtube tem um algoritmo melhor que trava menos, mas uma imagem de qualidade inferior a do Vimeo-->
+     </video>
+           
+
+
+    
+</body>
+</html>

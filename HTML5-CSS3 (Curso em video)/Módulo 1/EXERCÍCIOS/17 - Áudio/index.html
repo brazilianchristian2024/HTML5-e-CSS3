@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My audio lesson</title>
+</head>
+<body>
+      <h1>OUÇA MEU ÁUDIO E DIVIRTA-SE!!!!</h1>
+      <p>Esse reggae é maravilhoso!!!</p>
+      <audio src="Little Umbrellas - TrackTribe.mp3" controls  autoplay></audio><!--Esse comando funcionou, mas abaixo está outro comando mais completo caso esse não funcione, devido a incompatibilidade com certos navegadores. Alguns navegadores têm compatibilidade apenas com certos tipos de arquivo, como por exemplo, mp3. Então, nesse segundo exemplo haverá alternativas de código para futuras incompatibilidade que possam acontecer -->
+      <audio preload="metadata" autoplay controls loop>
+             <source src="Little Umbrellas - TrackTribe.mp3" type="audio/mpeg"><!--Primeira tentativa de abrir o arquivo-->
+             <source src="Little Umbrellas - TrackTribe.mp3" type="audio/ogg"><!--Segunda tentativa de abrir o arquivo-->
+             <source src="Little Umbrellas - TrackTribe.mp3" type="audio/wav"><!--Terceira tentativa de abrir o arquivo. OBS: Arquivos "wav" são pesados e portanto não recomendáveis-->
+             <p>Infelizmente seu navegador não consegue reproduzir audio. <a href="Little Umbrellas - TrackTribe.mp3">Clique aqui para baixar o arquivo MP3></a></p><!--Se não foi possível abrir o arquivo em nenhuma das três alternativas acima, será mostrada essa opção de baixar o arquivo-->
+
+      </audio>
+</body>
+</html>
